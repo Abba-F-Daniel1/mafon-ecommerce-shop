@@ -1,16 +1,12 @@
-import {Breadcrumbs, BreadcrumbItem} from "@nextui-org/react";
+"use client";
+import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 
-
-const BreadCrumbs: React.FC = () => {
+export default function BreadCrumbs() {
   return (
-    <Breadcrumbs>
+    <Breadcrumbs className="p-2 m-2 text-[#800020]">
       <BreadcrumbItem>Home</BreadcrumbItem>
-      <BreadcrumbItem>Music</BreadcrumbItem>
-      <BreadcrumbItem>Artist</BreadcrumbItem>
-      <BreadcrumbItem>Album</BreadcrumbItem>
-      <BreadcrumbItem>Song</BreadcrumbItem>
+      <BreadcrumbItem>Perfume</BreadcrumbItem>
+      
     </Breadcrumbs>
   );
-};
-
-export default BreadCrumbs;
+}
